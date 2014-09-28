@@ -1,0 +1,26 @@
+Begin
+
+
+Greetings to  from john doe. Howdy, anonymous guest!
+
+
+Greetings to 10 from john doe. Howdy, anonymous guest!
+
+
+Greetings to john from john doe. Howdy, anonymous guest!
+
+
+Greetings to john from michelle. Howdy, anonymous guest!
+
+
+Greetings to john from michelle. Howdy, johann!
+
+(pongo2 error: macro called with too many arguments [see debug mode])
+
+
+
+map[0] = Hello
+map[1] = 99
+map[2] = 3.140000
+map[3] = good
+End
