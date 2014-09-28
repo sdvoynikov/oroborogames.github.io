@@ -1,0 +1,71 @@
+{% extends "paragraph.html" %}
+
+{% block anchor %}about{% endblock %}
+
+{% block paragraph_title_first_letter %}
+{{ _("A") }}
+{% endblock %}
+
+{% block paragraph_title %}
+{{ _("About Us") }}
+{% endblock %}
+
+{% block paragraph_body %}
+<div class="content about">
+    <div class="item">
+        <img src="{% static "images/avatar-sd.png" %}" />
+        <div class="info">
+            <div class="name">
+                {{ _("Yarg") }}
+            </div>
+            <div class="dial-line">
+                <div class="label">{{ _("Class:") }}</div>
+                <div class="label">{{ _("Level:") }}</div>
+            </div>
+            <div class="dial-line">
+                <div class="value">{{ _("Programmer") }}</div>
+                <div class="value level"></div>
+            </div>
+            <div class="parameters">
+                <div class="parameter" data-values="coding:{{ _("Programming") }}:170:220">
+                </div><div class="parameter" data-values="melee:{{ _("Melee damage") }}:50:150|ranged:{{ _("Ranged damage") }}:50:150">
+
+                </div><div class="parameter" data-values="beer:{{ _("Beer drinking") }}:50:150|banking:{{ _("Treasure seeking") }}:50:150">
+
+                </div><div class="parameter" data-values="necromancy:{{ _("Necromancy") }}:10:60|fireball:{{ _("Fire Magic") }}:10:60"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="{% static "images/avatar-ts.png" %}" />
+        <div class="info">
+            <div class="name">
+                {{ _("Titus") }}
+            </div>
+            <div class="dial-line">
+                <div class="label">{{ _("Class:") }}</div>
+                <div class="label">{{ _("Level:") }}</div>
+            </div>
+            <div class="dial-line">
+                <div class="value">{{ _("Designer") }}</div>
+                <div class="value level"></div>
+            </div>
+            <div class="parameters">
+                <div class="parameter" data-values="art:{{ _("Drawing") }}:170:220">
+                </div><div class="parameter" data-values="melee:{{ _("Melee damage") }}:50:150|ranged:{{ _("Ranged damage") }}:50:150">
+
+                </div><div class="parameter" data-values="beer:{{ _("Beer drinking") }}:50:150|banking:{{ _("Treasure seeking") }}:50:150">
+
+                </div><div class="parameter" data-values="necromancy:{{ _("Necromancy") }}:10:60|fireball:{{ _("Fire Magic") }}:10:60"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <a href="mailto:info@oroborogames.net">
+        <img src="{% static "images/mail.png" %}" />
+        <span>info@oroborogames.net</span>
+    </a>
+</div>
+{% endblock %}

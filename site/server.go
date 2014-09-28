@@ -1,0 +1,24 @@
+package site
+
+import (
+	"github.com/y-a-r-g/dongo"
+	"os"
+	"net/http"
+)
+
+func StartServer() {
+	dongo.ServeStatic("/static/", "static")
+
+	dongo.ServeTemplateView("home", "/", "templates/index.html", ViewIndex)
+	dongo.ServeTemplateView("projects_hal", "/projects/hal/", "templates/projects/hal/index.html", ViewProjectHAL)
+
+	var port string = os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+
+	err := http.ListenAndServe(":"+port, nil)
+	if err != nil {
+		panic(err)
+	}
+}

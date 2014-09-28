@@ -1,0 +1,71 @@
+{% extends "paragraph.html" %}
+
+{% block anchor %}news{% endblock %}
+
+{% block paragraph_title_first_letter %}
+{{ _("N") }}
+{% endblock %}
+
+{% block paragraph_title %}
+{{ _("News") }}
+{% endblock %}
+
+{% block paragraph_body %}
+<div class="news">
+    <div class="content">
+        <div class="decor"></div>
+
+        <div class="news-item">
+            <div class="icon">
+                <img src="{% static "images/projects/tv-icon.png" %}"/>
+            </div>
+            <div class="title-wrapper">
+                <div class="title">
+                    {{ _("«Train Valley» Alpha Version is Available") }}
+                </div>
+                <div class="date">
+                    {{ _("20 April 2014") }}
+                </div>
+            </div>
+            <div class="body">
+                {{ _("We have developed this game for two years already. It was a long way, but we lived up to our promise and we are finally launching paid early access to the game! However, that’s just the start of the journey! The cool thing about it is that we are going to continue making the game, while you can play existing levels and help us make it better and better with every update!") }}
+                <a href="http://train-valley.com">{{ _("Early Access.") }}</a>
+                <div class="quote">
+                    <iframe width="480" height="360" src="//www.youtube.com/embed/_CId19yPru8" 
+                            frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="news-item">
+            <div class="icon">
+                <img src="{% static "images/projects/hal-icon.png" %}"/>
+            </div>
+            <div class="title-wrapper">
+                <div class="title">
+                    {{ _("«Hordes and Lords» Released") }}
+                </div>
+                <div class="date">
+                    {{ _("3 November 2012") }}
+                </div>
+            </div>
+            <div class="body">
+                {{ _("«Hordes and Lords» is a realtime tactical wargame with high quality graphics in medieval setting and unique engine that showing up to 200-300 units, with physics and effects.") }}
+                <a href="/projects/hal/">{{ _("Play the game.") }}</a>
+                <div class="quote">
+                    <iframe width="480" height="360" src="//www.youtube.com/embed/37mmeTqarrs" 
+                            frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="news-footer">
+    <a class="twitter" href="http://twitter.com/oroborogames">
+        <img src="{% static "images/twitter.png" %}"/>
+        <span>@oroborogames</span>
+    </a>
+</div>
+{% endblock %}

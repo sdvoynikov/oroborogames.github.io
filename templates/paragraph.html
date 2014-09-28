@@ -1,0 +1,14 @@
+<div class="paragraph-header">
+    <div class="title-bg">
+        <a name="{% block anchor %}{% endblock %}" class="anchor"></a>
+        <div class="title-text title-box">
+            {% block paragraph_title_first_letter %}{% endblock %}
+        </div>
+        <div class="title-text">
+            {% block paragraph_title %}{% endblock %}
+        </div>
+    </div>
+</div>
+<div class="paragraph">
+    {% block paragraph_body %}{% endblock %}
+</div>

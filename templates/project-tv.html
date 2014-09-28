@@ -1,0 +1,17 @@
+{% extends "project.html" %}
+
+{% block image %}
+<img src="{% static "images/projects/tv.png" %}"/>
+{% endblock %}
+
+{% block header %}
+{{ _("Train Valley") }}
+{% endblock %}
+
+{% block description %}
+{{ _("Tactical railroad manager. Game concept is quite simple, so even small children can enjoy it, but little by little it becomes challenging enough even for experienced players.")}}
+{% endblock %}
+
+{% block footer %}
+<a href="http://train-valley.com" class="button single">{{ _("Early Access") }}</a>
+{% endblock %}

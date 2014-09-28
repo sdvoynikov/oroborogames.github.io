@@ -1,0 +1,17 @@
+{% extends "project.html" %}
+
+{% block image %}
+<img src="{% static "images/projects/hal.png" %}"/>
+{% endblock %}
+
+{% block header %}
+{{ _("Hordes and Lords") }}
+{% endblock %}
+
+{% block description %}
+{{ _("Realtime tactical wargame with high quality graphics in medieval setting and unique engine that showing up to 200-300 units, with physics and effects.") }}
+{% endblock %}
+
+{% block footer %}
+<a href="{% url "projects_hal" %}" class="button single">{{ _("Play Now!") }}</a>
+{% endblock %}
