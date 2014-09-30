@@ -11,10 +11,6 @@ var defaultContext = pongo2.Context{
 	},
 }
 
-func ViewIndex(request *http.Request) pongo2.Context {
-	return defaultContext
-}
-
-func ViewProjectHAL(request *http.Request) pongo2.Context {
+func ShowStaticPage(request *http.Request) pongo2.Context {
 	return defaultContext
 }
