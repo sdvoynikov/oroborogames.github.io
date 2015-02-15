@@ -1,1 +1,0 @@
-web: oroborogames_site
