@@ -13,7 +13,7 @@ app.engine('html', swig.renderFile);
 app.set('view engine', 'html');
 app.set('views', __dirname + '/templates');
 app.set('view cache', false);
-swig.setDefaults({ cache: !debug });
+swig.setDefaults({ cache: debug ? false : 'memory' });
 
 app.get("/", function (req, res) {
     res.render("index");
