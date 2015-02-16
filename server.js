@@ -6,7 +6,17 @@ var express = require("express"),
     swig = require('swig'),
     hostname = process.env.HOSTNAME || "0.0.0.0",
     port = parseInt(process.env.PORT, 10) || 80,
-    debug = !!process.env.DEBUG;
+    debug = !!process.env.DEBUG,
+    mongoose = require('mongoose');
+
+
+mongoose.connect(process.env.MONGOLAB_URI);
+
+var LogInstance = mongoose.model('Log', mongoose.Schema({
+    application: String,
+    message: String,
+    trace: String
+}));
 
 app.engine('html', swig.renderFile);
 
@@ -30,6 +40,18 @@ app.get("/index.html", function (req, res) {
 
 app.get("/projects/hal", function (req, res) {
     res.render("projects/hal/index");
+});
+
+app.post('/api/log', function (req, res) {
+    var data = {
+        application: req.headers.application,
+        message: req.headers.message,
+        trace: req.headers.trace
+    };
+    var log = new LogInstance(data);
+    log.save(function(err) {
+        res.send(String(err));
+    });
 });
 
 app.use(methodOverride());
