@@ -48,14 +48,13 @@ app.post('/api/log', function (req, res) {
         message: req.headers.message,
         trace: req.headers.trace
     };
-    console.log(JSON.stringify(data));
-    res.send("");
     var log = new LogInstance(data);
     log.save(function(err) {
         if (err) {
             console.log("Error: " + err);
         }
     });
+    res.send("");
 });
 
 app.use(methodOverride());
