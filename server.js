@@ -46,7 +46,8 @@ app.post('/api/log', function (req, res) {
     var data = {
         application: req.headers.application,
         message: req.headers.message,
-        trace: req.headers.trace
+        trace: req.headers.trace,
+        date: req.headers.date
     };
     var log = new LogInstance(data);
     log.save(function(err) {
