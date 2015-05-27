@@ -4,8 +4,8 @@ var express = require("express"),
     errorHandler = require("errorhandler"),
     methodOverride = require("method-override"),
     swig = require('swig'),
-    hostname = process.env.HOSTNAME || "0.0.0.0",
-    port = parseInt(process.env.PORT, 10) || 80,
+    hostname = "127.0.0.1",// process.env.HOSTNAME || "0.0.0.0",
+    port = "80",//parseInt(process.env.PORT, 10) || 80,
     debug = !!process.env.DEBUG,
     mongoose = require('mongoose');
 
