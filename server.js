@@ -5,10 +5,11 @@ var express = require("express"),
     methodOverride = require("method-override"),
     swig = require('swig'),
     hostname = process.env.HOSTNAME || "0.0.0.0",
+    port = parseInt(process.env.PORT, 10) || 80,
     debug = !!process.env.DEBUG,
-    port = debug ? parseInt(process.env.PORT, 10) || 8000 : 80,
     mongoose = require('mongoose');
 
+console.log("Server required at " + process.env.HOSTNAME + ":" + process.env.PORT);
 
 mongoose.connect(process.env.MONGOLAB_URI);
 
@@ -70,5 +71,5 @@ app.use(errorHandler({
     showStack: debug
 }));
 
-console.log("Server is listening at port " + port);
+console.log("Server is listening at " + hostname + ":" + port);
 app.listen(port, hostname);
