@@ -5,8 +5,8 @@ var express = require("express"),
     methodOverride = require("method-override"),
     swig = require('swig'),
     hostname = process.env.HOSTNAME || "0.0.0.0",
-    port = parseInt(process.env.PORT, 10) || 80,
     debug = !!process.env.DEBUG,
+    port = debug ? parseInt(process.env.PORT, 10) || 8000 : 80,
     mongoose = require('mongoose');
 
 
