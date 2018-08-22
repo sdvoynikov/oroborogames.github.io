@@ -73,43 +73,42 @@ a img {
     background: url("/images/title-bg.png");
     display: block;
     width: 100%;
-    height: 98px
 }
 
 #title .content {
-    width: 980px;
+    width: 100%;
     margin: 0 auto;
-    display: block;
-    height: 100%
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }
 
 #title .content .logo {
-    padding: 15px 0;
+    padding: 14px 25px;
     display: inline-block
+}
+
+#title .content .spacer{
+    flex: 1 1 0;
 }
 
 #title .content .logo a {
     text-decoration: none
 }
 
-#title .content .nav {
-    display: inline-block;
-    font-size: 24px;
-    padding-left: 100px;
-    vertical-align: bottom
-}
-
-#title .content .nav a {
+#title .content a {
     color: #6b9abb;
     font: 28px 'fontin-caption';
     text-decoration: none;
     display: inline-block;
     height: 35px;
-    padding: 0 30px;
+    padding: 0 10px;
+    margin: 0 10px;
     position: relative;
     border-bottom: 5px solid transparent;
     top: -1px;
-    transition: border-bottom 1s, text-shadow 1s, color 1s
+    transition: border-bottom 1s, text-shadow 1s, color 1s;
+    white-space: nowrap;
 }
 
 #title .content .nav a:hover {
@@ -346,7 +345,7 @@ a img {
 }
 
 .news .news-item .body {
-    padding: 20px 0 15px 0;
+    padding: 20px 20px 15px 20px;
     display: block;
     font-size: 18px;
     position: relative
@@ -425,17 +424,18 @@ a img {
 .content.about .item .info .name {
     display: inline-block;
     vertical-align: middle;
-    font: 36px 'fontin-caption';
+    font: 24px 'fontin-caption';
     color: #a92923;
-    width: 40%;
-    text-align: center
+    width: 50%;
+    text-align: center;
+    margin-top: 6px;
 }
 
 .content.about .item .info .dial-line {
-    height: 60px;
+    height: 50px;
     display: inline-block;
     vertical-align: middle;
-    font: 20px 'fontin-caption'
+    font: 18px 'fontin-caption';
 }
 
 .content.about .item .info .dial-line .label {
@@ -449,7 +449,7 @@ a img {
 
 .content.about .item .info .parameters {
     display: block;
-    margin-top: 20px
+    margin-top: 27px;
 }
 
 .content.about .item .info .parameters .parameter {

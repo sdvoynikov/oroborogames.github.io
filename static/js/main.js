@@ -75,7 +75,7 @@ $(document).ready(function() {
             }, 10);
     }
 
-    $(".nav a").click(function(event) {
+    $("#title .content a").click(function(event) {
         var targetName = $(this).data('target'),
             $target = $('a[name="' + targetName + '"]');
 
