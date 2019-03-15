@@ -28,6 +28,10 @@ app.get("/index.html", function (req, res) {
     res.render("index");
 });
 
+app.get("/privacy", function (req, res) {
+    res.render("privacy");
+});
+
 app.get("/projects/hal", function (req, res) {
     res.render("projects/hal/index");
 });
