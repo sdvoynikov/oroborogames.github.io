@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'fontin';
-    src: url('/fonts/FontinSans_Cyrillic_R_46b.otf');
+    src: url('../fonts/FontinSans_Cyrillic_R_46b.otf');
     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: 'fontin-caption';
-    src: url('/fonts/FontinSans_Cyrillic_SC_46b.otf');
+    src: url('../fonts/FontinSans_Cyrillic_SC_46b.otf');
     font-weight: normal;
     font-style: normal
 }
@@ -21,7 +21,7 @@ body {
     margin: 0;
     font: 16px 'fontin', 'Arial', sans-serif, serif;
     min-height: 100%;
-    background: url("/images/paragraph-bg.png");
+    background: url("../images/paragraph-bg.png");
     background-position: center
 }
 
@@ -49,12 +49,12 @@ a img {
     margin-top: -344px;
     width: 687px;
     height: 689px;
-    background: url("/images/rotating-snake.png");
+    background: url("../images/rotating-snake.png");
     z-index: 500
 }
 
 .to-top {
-    background: rgba(117, 139, 165, 0.5) url("/images/top.png");
+    background: rgba(117, 139, 165, 0.5) url("../images/top.png");
     background-repeat: no-repeat;
     background-position: center;
     position: fixed;
@@ -70,7 +70,7 @@ a img {
 }
 
 #title {
-    background: url("/images/title-bg.png");
+    background: url("../images/title-bg.png");
     display: block;
     width: 100%;
 }
@@ -118,7 +118,7 @@ a img {
 }
 
 .paragraph-header {
-    background: url("/images/paragraph-header.png");
+    background: url("../images/paragraph-header.png");
     background-repeat: repeat no-repeat;
     background-position: top center;
     height: 93px;
@@ -131,7 +131,7 @@ a img {
     width: 980px;
     margin: 0 auto;
     display: block;
-    background: url("/images/paragraph-title.png");
+    background: url("../images/paragraph-title.png");
     background-repeat: no-repeat;
     height: 100%;
     position: relative;
@@ -167,7 +167,7 @@ a img {
 .paragraph {
     position: relative;
     z-index: 1;
-    background: url("/images/paragraph-bg.png");
+    background: url("../images/paragraph-bg.png");
     background-position: center
 }
 
@@ -182,7 +182,7 @@ a img {
     width: 100%;
     height: 334px;
     box-shadow: 0 1px 7px rgba(0, 0, 0, 0.44);
-    background: url("/images/coming-soon.png");
+    background: url("../images/coming-soon.png");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #3e3d3d;
@@ -208,7 +208,7 @@ a img {
 }
 
 .project {
-    background: url("/images/project-bg.png");
+    background: url("../images/project-bg.png");
     width: 945px;
     height: 292px;
     margin: 15px auto 0 auto;
@@ -310,7 +310,7 @@ a img {
 
 .news .content .decor {
     position: absolute;
-    background: url('/images/news-decor.png');
+    background: url('../images/news-decor.png');
     width: 356px;
     height: 207px;
     left: -280px;
@@ -359,7 +359,7 @@ a img {
 }
 
 .news-footer {
-    background: url("/images/news-bg.png");
+    background: url("../images/news-bg.png");
     background-repeat: repeat no-repeat;
     background-position: top center;
     width: 100%;
@@ -414,7 +414,7 @@ a img {
 }
 
 .content.about .item .info {
-    background: url("/images/about-bg.png");
+    background: url("../images/about-bg.png");
     width: 366px;
     height: 230px;
     padding: 10px 50px;
