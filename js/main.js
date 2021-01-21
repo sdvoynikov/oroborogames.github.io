@@ -33,7 +33,7 @@ $(document).ready(function() {
             v = parseInt(min + Math.random() * (max - min));
 
         $parameter.append([
-            '<img src="/images/skill-', id, '.png" />',
+            '<img src="images/skill-', id, '.png" />',
             '<div class="description">',
             '    <div class="label">', title, '</div>',
             '    <div class="value">', v, '</div>',
