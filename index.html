@@ -1,16 +1,141 @@
-{% extends "paragraph.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!--meta name="viewport" content="width=device-width, initial-scale=1"/-->
+    <link rel="stylesheet" href="/styles/styles.css"/>
 
-{% block anchor %}news{% endblock %}
+    <title>Oroboro Games</title>
+</head>
+<body>
 
-{% block paragraph_title_first_letter %}
+<div id="title">
+    <div class="content">
+        <div class="spacer"></div>
+        <div class="logo">
+            <a href="/">
+                <img src="/images/title-logo.png"/>
+            </a>
+        </div>
+        <div class="spacer"></div>
+        <a href="#projects" data-target="projects">Projects</a>
+        <a href="#news" data-target="news">News</a>
+        <a href="#about" data-target="about">About Us</a>
+        <div class="spacer"></div>
+    </div>
+</div>
+
+<div class="paragraph-header">
+    <div class="title-bg">
+        <a name="projects" class="anchor"></a>
+        <div class="title-text title-box">
+            
+P
+
+        </div>
+        <div class="title-text">
+            
+Projects
+
+        </div>
+    </div>
+</div>
+<div class="paragraph">
+    
+<!--div class="coming-soon">
+    <div class="link-wrapper" style="position: relative">
+        <span class="link">Open Beta is Started</span>
+        <img src="/images/when-its-done.png" style="position: absolute; top: 209px; left: 22px;">
+    </div>
+</div -->
+<div class="content">
+    <div class="project">
+    <div class="image">
+        
+<img src="/images/projects/tv2.png"/>
+
+    </div>
+    <div class="header">
+        
+Train Valley 2
+
+    </div>
+    <div class="description">
+        
+Build an efficient railroad, upgrade your locomotives, and keep all trains on track to meet the ever-growing demand of the cities and industries in your tiny valley. Choo-choo!
+
+    </div>
+    <div class="footer">
+        
+<a href="http://train-valley.com/tv2.html" class="button single">Play Now!</a>
+
+    </div>
+</div>
+    <div class="project">
+    <div class="image">
+        
+<img src="/images/projects/tv.png"/>
+
+    </div>
+    <div class="header">
+        
+Train Valley
+
+    </div>
+    <div class="description">
+        
+Tactical railroad manager. Game concept is quite simple, so even small children can enjoy it, but little by little it becomes challenging enough even for experienced players.
+
+    </div>
+    <div class="footer">
+        
+<a href="http://train-valley.com/tv1.html" class="button single">Play Now!</a>
+
+    </div>
+</div>
+    <div class="project">
+    <div class="image">
+        
+<img src="/images/projects/hal.png"/>
+
+    </div>
+    <div class="header">
+        
+Hordes and Lords
+
+    </div>
+    <div class="description">
+        
+Realtime tactical wargame with high quality graphics in medieval setting and unique engine that showing up to 200-300 units, with physics and effects.
+
+    </div>
+    <div class="footer">
+        
+<a href="projects/hal" class="button single">Play Now!</a>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="paragraph-header">
+    <div class="title-bg">
+        <a name="news" class="anchor"></a>
+        <div class="title-text title-box">
+            
 N
-{% endblock %}
 
-{% block paragraph_title %}
+        </div>
+        <div class="title-text">
+            
 News
-{% endblock %}
 
-{% block paragraph_body %}
+        </div>
+    </div>
+</div>
+<div class="paragraph">
+    
 <div class="news">
     <div class="content">
         <div class="decor"></div>
@@ -154,4 +279,101 @@ News
         <span>@oroborogames</span>
     </a>
 </div>
-{% endblock %}
+
+</div>
+<div class="paragraph-header">
+    <div class="title-bg">
+        <a name="about" class="anchor"></a>
+        <div class="title-text title-box">
+            
+A
+
+        </div>
+        <div class="title-text">
+            
+About Us
+
+        </div>
+    </div>
+</div>
+<div class="paragraph">
+    
+<div class="content about">
+    <div class="item">
+        <img src="/images/avatar-sd.png" />
+        <div class="info">
+            <div class="name">
+                Sergey Dvoynikov
+            </div>
+            <div class="dial-line">
+                <div class="label">Class:</div>
+                <div class="label">Level:</div>
+            </div>
+            <div class="dial-line">
+                <div class="value">Programmer</div>
+                <div class="value level"></div>
+            </div>
+            <div class="parameters">
+                <div class="parameter" data-values="coding:Programming:170:220">
+                </div><div class="parameter" data-values="melee:Melee damage:50:150|ranged:Ranged damage:50:150">
+
+                </div><div class="parameter" data-values="beer:Beer drinking:50:150|banking:Treasure seeking:50:150">
+
+                </div><div class="parameter" data-values="necromancy:Necromancy:10:60|fireball:Fire Magic:10:60"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="/images/avatar-ts.png" />
+        <div class="info">
+            <div class="name">
+                Timofey Shargorodsky
+            </div>
+            <div class="dial-line">
+                <div class="label">Class:</div>
+                <div class="label">Level:</div>
+            </div>
+            <div class="dial-line">
+                <div class="value">Designer</div>
+                <div class="value level"></div>
+            </div>
+            <div class="parameters">
+                <div class="parameter" data-values="art:Drawing:170:220">
+                </div><div class="parameter" data-values="melee:Melee damage:50:150|ranged:Ranged damage:50:150">
+
+                </div><div class="parameter" data-values="beer:Beer drinking:50:150|banking:Treasure seeking:50:150">
+
+                </div><div class="parameter" data-values="necromancy:Necromancy:10:60|fireball:Fire Magic:10:60"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <a href="mailto:info@oroborogames.net">
+        <img src="/images/mail.png" />
+        <span>info@oroborogames.net</span>
+    </a>
+</div>
+
+</div>
+
+<div class="rotating-snake"></div>
+<div class="to-top"></div>
+
+<script type="text/javascript" src="/js/jquery-2.1.0.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35965459-1', 'oroborogames.net');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
